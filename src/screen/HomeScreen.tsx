@@ -2,10 +2,13 @@ import { StyleSheet, Text, View } from "react-native";
 import UploadButton from "../component/UploadButton";
 import { COLOR } from "../constant/color";
 import PretendardText from "../component/PretendardText";
+import {Image} from 'react-native';
+import defaultImageIcon from '../asset/image/defaultImageIcon.png';
 
 function HomeScreen() {
     return (
         <View style={styles.container}>
+            <Image source={defaultImageIcon}/>
             <View style={styles.textContainer}>
                 <PretendardText fontStyle={styles.boldText}>오늘의 4컷</PretendardText>
                 <PretendardText fontStyle={styles.contentText}>
