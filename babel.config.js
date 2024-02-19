@@ -13,9 +13,12 @@ module.exports = {
           '@context': './src/context',
           '@hook': './src/hook',
           '@screen': './src/screen',
-          '@service': './src/service',
           '@style': './src/style',
-          '@util': './src/util'
+          '@util': './src/util',
+          '@type': './src/type',
+          '@navigation': './src/navigation',
+          '@store': './src/store',
+          '@model': './src/model',
         }
       }
     ]
