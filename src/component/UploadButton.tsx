@@ -1,6 +1,6 @@
+import PretendardText from '@component/PretendardText';
+import {COLOR} from '@constant/color';
 import {Pressable, StyleSheet} from 'react-native';
-import {COLOR} from '../constant/color';
-import PretendardText from './PretendardText';
 
 function UploadButton() {
   return (

@@ -1,4 +1,5 @@
 import {StyleSheet, Text, TextStyle} from 'react-native';
+import React from 'react';
 
 interface PretendardTextProps {
   children: React.ReactNode;

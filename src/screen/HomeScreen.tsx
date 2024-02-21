@@ -1,9 +1,8 @@
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, Image} from 'react-native';
+import defaultImageIcon from '@asset/image/defaultImageIcon.png';
+import PretendardText from '@component/PretendardText';
 import UploadButton from '@component/UploadButton';
 import {COLOR} from '@constant/color';
-import PretendardText from '@component/PretendardText';
-import {Image} from 'react-native';
-import defaultImageIcon from '@asset/image/defaultImageIcon.png';
 
 function HomeScreen() {
   return (
