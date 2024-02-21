@@ -1,7 +1,7 @@
-import {StyleSheet, Text, View} from 'react-native';
-import UploadButton from '../component/UploadButton';
-import {COLOR} from '../constant/color';
-import PretendardText from '../component/PretendardText';
+import {StyleSheet, View} from 'react-native';
+import UploadButton from '@component/UploadButton';
+import {COLOR} from '@constant/color';
+import PretendardText from '@component/PretendardText';
 import {Image} from 'react-native';
 import defaultImageIcon from '@asset/image/defaultImageIcon.png';
 
