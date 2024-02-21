@@ -18,4 +18,5 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'off',
   },
   plugins: ['prettier'],
+  parser: '@typescript-eslint/parser',
 };
