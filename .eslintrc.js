@@ -1,6 +1,11 @@
 module.exports = {
   root: true,
-  extends: '@react-native',
+  extends: [
+    '@react-native',
+    'prettier',
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+  ],
   rules: {
     'prettier/prettier': [
       'error',
@@ -12,4 +17,5 @@ module.exports = {
     'react/no-unstable-nested-components': 'off',
     'react-hooks/exhaustive-deps': 'off',
   },
+  plugins: ['prettier'],
 };
