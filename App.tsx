@@ -1,7 +1,6 @@
 import {COLOR} from '@constant/color';
 import HomeScreen from '@screen/HomeScreen';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
-import {ReactQueryDevtools} from '@tanstack/react-query-devtools';
 import React, {useEffect} from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
@@ -17,7 +16,6 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaView style={styles.background}>
       <QueryClientProvider client={queryClient}>
-        <ReactQueryDevtools initialIsOpen={false} />
         <RecoilRoot>
           <HomeScreen />
         </RecoilRoot>
