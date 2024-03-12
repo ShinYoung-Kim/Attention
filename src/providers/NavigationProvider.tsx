@@ -1,4 +1,4 @@
-import {ChildrenProps} from '@/type/common';
+import {ChildrenProps} from '@type/common';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 

@@ -1,4 +1,4 @@
-import {ChildrenProps} from '@/type/common';
+import {ChildrenProps} from '@type/common';
 import React from 'react';
 import {RecoilRoot} from 'recoil';
 

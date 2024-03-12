@@ -1,4 +1,4 @@
-import {ChildrenProps} from '@/type/common';
+import {ChildrenProps} from '@type/common';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 
 const queryClient = new QueryClient();
