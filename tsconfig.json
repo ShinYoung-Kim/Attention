@@ -14,7 +14,7 @@
       "@store/*": ["store/*"],
       "@model/*": ["model/*"],
       "@layout/*": ["layout/*"],
-      "@provider/*": ["provider/*"],
+      "@providers/*": ["providers/*"],
       "@types/*": ["types/*"]
     }
   },
