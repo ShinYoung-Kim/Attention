@@ -30,6 +30,8 @@ module.exports = {
           '@store': './src/store',
           '@model': './src/model',
           '@layout': './src/layout',
+          '@provider': './src/provider',
+          '@types': './src/types',
         },
       },
     ],

@@ -13,7 +13,9 @@
       "@navigation/*": ["navigation/*"],
       "@store/*": ["store/*"],
       "@model/*": ["model/*"],
-      "@layout/*": ["layout/*"]
+      "@layout/*": ["layout/*"],
+      "@provider/*": ["provider/*"],
+      "@types/*": ["types/*"]
     }
   },
   "extends": "@react-native/typescript-config/tsconfig.json"
