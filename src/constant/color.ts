@@ -11,3 +11,5 @@ export const COLOR = {
   WFWHITE: '#FFFFFF',
   MAIN01: '#FF6D2F',
 };
+
+export type ColorType = keyof typeof COLOR;

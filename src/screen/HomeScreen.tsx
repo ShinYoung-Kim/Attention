@@ -3,21 +3,26 @@ import defaultImageIcon from '@asset/image/defaultImageIcon.png';
 import PretendardText from '@component/PretendardText';
 import UploadButton from '@component/UploadButton';
 import {COLOR} from '@constant/color';
+import PageLayout from '@layout/PageLayout';
 
 function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Image source={defaultImageIcon} />
-      <View style={styles.textContainer}>
-        <PretendardText fontStyle={styles.boldText}>오늘의 4컷</PretendardText>
-        <PretendardText fontStyle={styles.contentText}>
-          오늘 하루를 표현할 수 있는
-          {'\n'}
-          사진 4장을 업로드 해주세요.
-        </PretendardText>
+    <PageLayout>
+      <View style={styles.container}>
+        <Image source={defaultImageIcon} />
+        <View style={styles.textContainer}>
+          <PretendardText fontStyle={styles.boldText}>
+            오늘의 4컷
+          </PretendardText>
+          <PretendardText fontStyle={styles.contentText}>
+            오늘 하루를 표현할 수 있는
+            {'\n'}
+            사진 4장을 업로드 해주세요.
+          </PretendardText>
+        </View>
+        <UploadButton />
       </View>
-      <UploadButton />
-    </View>
+    </PageLayout>
   );
 }
 
@@ -27,6 +32,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 20,
+    backgroundColor: COLOR.WF800,
   },
   textContainer: {
     gap: 8,
