@@ -1,11 +1,15 @@
-import {COLOR} from '@constant/color';
+import AlbumScreen from '@screen/AlbumScreen';
+import FeedScreen from '@screen/FeedScreen';
+import ProfileScreen from '@screen/ProfileScreen';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '@screen/HomeScreen';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import React, {useEffect} from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import {RecoilRoot} from 'recoil';
+import {NavigationContainer} from '@react-navigation/native';
 
+const Tab = createBottomTabNavigator();
 function App(): React.JSX.Element {
   useEffect(() => {
     SplashScreen.hide();
@@ -14,20 +18,19 @@ function App(): React.JSX.Element {
   const queryClient = new QueryClient();
 
   return (
-    <SafeAreaView style={styles.background}>
-      <QueryClientProvider client={queryClient}>
-        <RecoilRoot>
-          <HomeScreen />
-        </RecoilRoot>
-      </QueryClientProvider>
-    </SafeAreaView>
+    <QueryClientProvider client={queryClient}>
+      <RecoilRoot>
+        <NavigationContainer>
+          <Tab.Navigator initialRouteName="Home">
+            <Tab.Screen name="Home" component={HomeScreen} />
+            <Tab.Screen name="Feed" component={FeedScreen} />
+            <Tab.Screen name="Album" component={AlbumScreen} />
+            <Tab.Screen name="Profile" component={ProfileScreen} />
+          </Tab.Navigator>
+        </NavigationContainer>
+      </RecoilRoot>
+    </QueryClientProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  background: {
-    backgroundColor: COLOR.WF800,
-  },
-});
 
 export default App;
