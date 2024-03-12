@@ -6,8 +6,10 @@ import FeedScreen from '@screen/FeedScreen';
 import HomeScreen from '@screen/HomeScreen';
 import ProfileScreen from '@screen/ProfileScreen';
 import React from 'react';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 function TabNavigation() {
+  const insets = useSafeAreaInsets();
   return (
     <Tab.Navigator
       initialRouteName="Home"
@@ -15,6 +17,7 @@ function TabNavigation() {
         headerShown: false,
         tabBarStyle: {
           backgroundColor: COLOR.WF900,
+          height: 64 + insets.bottom,
         },
         tabBarActiveTintColor: COLOR.WFWHITE,
         tabBarInactiveTintColor: COLOR.WF500,
@@ -25,6 +28,7 @@ function TabNavigation() {
         options={{
           tabBarIcon: ({focused}) =>
             Icon({name: 'Home', fill: focused ? 'WFWHITE' : 'WF500', size: 24}),
+          tabBarLabel: '홈',
         }}
       />
       <Tab.Screen
@@ -37,6 +41,7 @@ function TabNavigation() {
               fill: focused ? 'WFWHITE' : 'WF500',
               size: 24,
             }),
+          tabBarLabel: '피드',
         }}
       />
       <Tab.Screen
@@ -49,6 +54,7 @@ function TabNavigation() {
               fill: focused ? 'WFWHITE' : 'WF500',
               size: 24,
             }),
+          tabBarLabel: '앨범',
         }}
       />
       <Tab.Screen
@@ -61,6 +67,7 @@ function TabNavigation() {
               fill: focused ? 'WFWHITE' : 'WF500',
               size: 24,
             }),
+          tabBarLabel: '프로필',
         }}
       />
     </Tab.Navigator>
