@@ -9,7 +9,15 @@ export const COLOR = {
   WF200: '#EDF0F7',
   WF100: '#F7F9FC',
   WFWHITE: '#FFFFFF',
-  MAIN01: '#FF6D2F',
+  Main: {
+    MAIN01: '#FF6D2F',
+    MAIN02: '#FFFFFF',
+    MAIN03: '#000000',
+    MAIN04: '#CBCBCB',
+    MAIN05: '#A9F8FF',
+    MAIN06: '#FFF384',
+    MAIN07: '#FF9ED0',
+  },
 };
 
 export type ColorType = keyof typeof COLOR;
