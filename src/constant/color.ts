@@ -12,4 +12,15 @@ export const COLOR = {
   MAIN01: '#FF6D2F',
 };
 
+export const FRAME_COLOR = {
+  Orange: '#FF6D2F',
+  White: '#FFFFFF',
+  Black: '#000000',
+  Gray: '#CBCBCB',
+  Mint: '#A9F8FF',
+  Yellow: '#FFF384',
+  Pink: '#FF9ED0',
+};
+
 export type ColorType = keyof typeof COLOR;
+export type FrameColorType = keyof typeof FRAME_COLOR;
